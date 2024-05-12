@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier les Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plate-forme Éducative</h1>
+    </header>
+
+    <section class="notes">
+        <h2>Modifier les Notes</h2>
+        <form id="notesForm">
+            <div class="matiere">
+                <h3>Réseau</h3>
+                <label for="Réseau">Note : </label>
+                <input type="number" id="réseau" name="réseau" min="0" max="20" step="0.1">
+                <label for="math">Examen : </label>
+                <input type="number" id="réseau" name="réseau" min="0" max="20" step="0.1">
+                <label for="math">Moyenne : </label>
+                <input type="number" id="réseau" name="réseau" min="0" max="20" step="0.1">
+            </div>
+            <div class="matiere">
+                <h3>Technologie web </h3>
+                <label for="Technologie web ">Note : </label>
+                <input type="number" id="Téchn" name="Téchn" min="0" max="20" step="0.1">
+                <label for="math">Examen : </label>
+                <input type="number" id="Téchn" name="Téchn" min="0" max="20" step="0.1">
+                <label for="math">Moyenne : </label>
+                <input type="number" id="Téchn" name="Téchn" min="0" max="20" step="0.1">
+            </div>
+            <div class="matiere">
+                <h3>Communication E-CRM </h3>
+                <label for="Communication E-CRM">Note : </label>
+                <input type="number" id="E-CRM" name="E-CRM" min="0" max="20" step="0.1">
+                <label for="math">Examen : </label>
+                <input type="number" id="E-CRM" name="E-CRM" min="0" max="20" step="0.1">
+                <label for="math">Moyenne : </label>
+                <input type="number" id="E-CRM" name="E-CRM" min="0" max="20" step="0.1">
+            </div>
+            <div class="matiere">
+                <h3>Indesign</h3>
+                <label for="Indesign">Note : </label>
+                <input type="number" id="Indesign" name="Indesign" min="0" max="20" step="0.1">
+                <label for="math">Examen : </label>
+                <input type="number" id="Indesign" name="Indesign" min="0" max="20" step="0.1">
+                <label for="math">Moyenne : </label>
+                <input type="number" id="Indesign" name="Indesign" min="0" max="20" step="0.1">
+            </div>
+            <div class="matiere">
+                <h3>Montage et effets spéciaux</h3>
+                <label for="Montage et effets spéciaux">Note : </label>
+                <input type="number" id="Montage et effets spéciaux" name="Montage et effets spéciaux" min="0" max="20" step="0.1">
+                <label for="math">Examen : </label>
+                <input type="number" id="Montage et effets spéciaux" name="Montage et effets spéciaux" min="0" max="20" step="0.1">
+                <label for="math">Moyenne : </label>
+                <input type="number" id="Montage et effets spéciaux" name="Montage et effets spéciaux" min="0" max="20" step="0.1">
+            </div>
+            <button type="submit">Enregistrer</button>
+        </form>
+    </section>
+
+   
+
+    <script src="script.js">
+        JavaScript (script.js) :
+
+javascript
+Copy code
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('notesForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du formulaire
+
+        // Récupère les valeurs des champs de notes
+        const reseauNote = parseFloat(document.getElementById('reseau').value);
+        const technologie webNote = parseFloat(document.getElementById('technologie web').value);
+        const communicationNote = parseFloat(document.getElementById('communication').value);
+        const indesignNote = parseFloat(document.getElementById('indesign').value);
+        const montageNote = parseFloat(document.getElementById('montage').value);
+
+        // Affiche les notes dans la console (vous pouvez les envoyer à un serveur pour les enregistrer)
+        console.log("Note en Reseau :", reseauNote);
+        console.log("Note en Technologie web :", Technologie webNote);
+        console.log("Note en Communication :", communicationNote);
+        console.log("Note en Indesign :", indesignNote);
+        console.log("Note en Montage :", montageNote);
+
+        // Affiche un message de succès
+        alert("Les notes ont été enregistrées avec succès !");
+    });
+});
+    </script>
+
+</body>
+</html>

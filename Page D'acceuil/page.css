@@ -1,0 +1,37 @@
+*
+{  
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+	background-image: url('images.jpg');	
+	background-size: cover;
+	display: flex;
+	box-sizing:border-box;
+	font-family: sans-serif;}
+	
+.dalal{
+	background: white;
+	text-align: center;
+
+}
+.dalal ul{
+	display: inline-flex;
+	list-style: none ;
+	color: black;
+}
+.dalal ul li{
+	width: 210px;
+	margin: 20px;
+	padding: 20px;
+}
+.dalal ul li a{
+	text-decoration:none ;
+	color: black;
+}
+.active, .dalal ul li:hover{
+	background:#2bab0d ;
+	border-radius: 2px ;
+}
+

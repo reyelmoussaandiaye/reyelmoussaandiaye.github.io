@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de connexion</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <header>
+    <h1>Bienvenue à L'Université Numérique Cheikh Hamidou Kane !!!</h1>
+    </header>
+    <h2>Espace d'administration</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">connecter</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="page.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Se connecter</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+    <form action="page.html" method="post">   
+    <div>
+        <label for="name" class="italique">INE :</label>
+        <input type="text" id="ine" name="ine_name" required /><br><br>
+    </div>
+    <div>
+        <label for="name">Nom :</label>
+        <input type="text" id="nom" name="nom_name" required /><br><br>
+    </div>
+    <div>
+
+        <label for="name">Prénom :</label>
+        <input type="text" id="prenom" name="prenom_name" required /><br><br>
+    </div>
+    <div>
+        <label for="mail">e-mail:</label>
+        <input type="email" id="mail" name="mail_name" required /><br><br>
+    </div>
+    <div>
+        <label for="name">Téléphone :</label>
+        <input type="tel" id="tel" name="tel_name" required /><br><br>
+    </div>
+
+    <div class="dalal">
+         <input type="submit" value="Se connecter" name="envoi" />
+    </div>       
+    </form>
+    <footer><p>Copyright©Groupe 1 sous groupe 12 Unchk.sn</p></footer>
+    <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
